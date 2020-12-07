@@ -1,0 +1,21 @@
+.todo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: baseline;
+  align-items: baseline;
+  align-content: space-between;
+}
+
+.todo label {
+  flex-grow: 1;
+}
+
+.todo label:first-child {
+  align-self: flex-start;
+}
+.todo label:last-child {
+  align-self: flex-end;
+  text-align: right;
+}
