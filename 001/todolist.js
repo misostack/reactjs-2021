@@ -1,3 +1,17 @@
+class TodoForm extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <div className="form-group">
+          <input type="text" className="form-control form-control-lg" />
+        </div>
+      </React.Fragment>
+    );
+  }
+}
 class Todo extends React.Component {
   constructor(props) {
     super(props);
