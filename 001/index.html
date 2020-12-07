@@ -19,6 +19,13 @@
   <div id="root"></div>
   <script type="text/babel">
     const title = 'The Headfirst';    
+    // m = h * 30/5.5
+    const pairs = Object.keys(new Array(12).fill(null)).map((v,h)=> h).map(h => {
+      const d = new Date(2020,12,7, h, h*30/5.5, 0);     
+      return (<Clock key={h} d={d}  />)
+    });
+    console.log(pairs);
+
     const app = (
       <div className="container">
         <header>
@@ -27,6 +34,7 @@
         <aside></aside>
         <main>
           <TodoList />
+          {pairs}
           <Clock />
         </main>
         <footer></footer>

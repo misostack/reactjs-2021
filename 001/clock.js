@@ -1,14 +1,22 @@
 class Clock extends React.Component {
   constructor(props) {
     super(props);
-    const rotation = this.calculateRotation(new Date());
-    this.state = { rotation };
+    console.log(this.props.d);
+    if (this.props.d) {
+      const rotation = this.calculateRotation(this.props.d);
+      this.state = { rotation };
+    } else {
+      const rotation = this.calculateRotation(new Date());
+      this.state = { rotation };
+    }
   }
 
   componentDidMount() {
-    setInterval(() => {
-      this.tick();
-    }, 1000);
+    if (!this.props.d) {
+      setInterval(() => {
+        this.tick();
+      }, 1000);
+    }
   }
 
   componentWillUnmount() {}
