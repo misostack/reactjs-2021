@@ -50,23 +50,10 @@ class Clock extends React.Component {
     const secondStyle = { transform: rotation.srotate };
     return (
       <React.Fragment>
-        <h2>Clock</h2>
-        <p>Một số điều cần biết về chuyển động góc trong kim đồng hồ</p>
-        <ol>
-          <li>
-            Cơ sở toán học :
-            https://sites.google.com/site/mymathclassroom/trigonometry/clock-angle-problems/clock-angle-problem-formula
-          </li>
-          <li>
-            Độ và radian là hai đơn vị đo góc.[1] Một đường tròn có 360 độ,
-            tương đương với 2π radian, vậy 360° và 2π radian đại diện cho giá
-            trị số của "một vòng" đường tròn. Eg: 1° = π/180
-          </li>
-        </ol>
-        <ul id="clock">
-          <li id="sec" style={secondStyle}></li>
-          <li id="hour" style={hourStyle}></li>
-          <li id="min" style={minuteStyle}></li>
+        <ul class="clock">
+          <li class="clock-sec" style={secondStyle}></li>
+          <li class="clock-min" style={minuteStyle}></li>
+          <li class="clock-hour" style={hourStyle}></li>
         </ul>
       </React.Fragment>
     );

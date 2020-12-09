@@ -1,33 +1,40 @@
-#clock {
+.clock {
   position: relative;
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   margin: 20px auto 0 auto;
-  background: url(assets/clockface.jpg);
+  background: transparent url(assets/clockface.jpg) no-repeat scroll center
+    center;
+  background-size: cover;
   list-style: none;
 }
 
-#sec,
-#min,
-#hour {
+.clock-sec,
+.clock-min,
+.clock-hour {
   position: absolute;
   width: 30px;
-  height: 600px;
+  height: 100%;
   top: 0px;
-  left: 285px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-#sec {
-  background: url(assets/sechand.png);
+.clock-sec {
+  background: transparent url(assets/sechand.png) no-repeat scroll center center;
+  background-size: contain;
   z-index: 3;
 }
 
-#min {
-  background: url(assets/minhand.png);
+.clock-min {
+  background: transparent url(assets/minhand.png) no-repeat scroll center center;
+  background-size: contain;
   z-index: 2;
 }
 
-#hour {
-  background: url(assets/hourhand.png);
+.clock-hour {
+  background: transparent url(assets/hourhand.png) no-repeat scroll center
+    center;
+  background-size: contain;
   z-index: 1;
 }
