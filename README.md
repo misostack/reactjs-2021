@@ -1,46 +1,46 @@
 # ReactJS 2021
 
-## Prerequisites
+> Learn enough to be dangerous
 
-1. HTML5, CSS3
-2. Javascript
+**Flow**
 
-## Main Concept
+> Idea -> Concept -> Build -> Operation
 
-### Concepts
+## Deployment
 
-1. [ ] JSX Syntax
-2. [ ] Rendering elements
-3. [ ] Component and props
-4. [ ] State and Lifecycle
-5. [ ] Handling events
-6. [ ] Conditional Rendering
-7. [ ] Lists and Keys
-8. [ ] Forms
-9. [ ] Lifting State Up
-10. [ ] Composition vs Inheritance
-11. [ ] Thinking in React
+```bash
+yarn global add surge
+# login
+surge
+```
 
-## Lession 001
+## Dev
 
-### Related Doc
+- http://reactjs2021-sonnm.surge.sh
+- [001](- http://reactjs2021-sonnm.surge.sh/)
 
-- https://reactjs.org/docs/introducing-jsx.html
-- https://www.w3schools.com/js/default.asp
-- https://www.w3schools.com/html/default.asp
-- https://www.w3schools.com/css/default.asp
-- https://developer.mozilla.org/en-US/docs/Web/API
+## Cơ sở lí thuyết
 
-> Get and display the news from these pages
+![ReactJS LifeCycle](./assets/reactjs-lifecycle.png)
 
-- https://cafebiz.vn/rss.chn
-- https://bongda24h.vn/RSS.html
-- https://vnexpress.net/rss
+> Fundamentals
 
-## Development Tools
+- React DOM
+- JSX
+- React Elements - immutable
+- Components & Props
+- State and Lifecyle
+- Props Validation
 
-1. VSCode Extensions
+> Forms & Events & Communicate between components
 
-- Prettier
-- React Snippets
-- React Redux
+- Forms
+- Events
+- Refs
+- Keys
+
+## Practice
+
+1.[Clock](./001/)
+
+> Hiển thị đồng hồ tại múi giờ được chọn

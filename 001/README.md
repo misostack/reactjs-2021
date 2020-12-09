@@ -1,31 +1,42 @@
-# ReactJS Lession 001
-
-## Main concept
-
-- React DOM
-- JSX
-- React Elements - immutable
-- Components & Props
-- State and Lifecyle
-
-## Practice
-
-1. Clock
+# Clock
 
 > Hiển thị đồng hồ tại múi giờ được chọn
 
-2. Todolist
+## UI
 
-> Xây dựng todolist sử dụng localstorage để lưu trữ dữ liệu và react-hooks để quản lý state
+- https://codepen.io/misostack/project/editor/Ajnrpr#
 
-- UI : https://jsfiddle.net/misostack/r7g8bfq3/
+## Breakdown
 
-- https://www.codecademy.com/learn/react-101/modules/react-hooks-u
-- https://bbbootstrap.com/snippets/todo-list-template-local-storage-10214124
-- https://www.w3schools.com/howto/howto_js_todolist.asp
-- https://bbbootstrap.com/snippets/simple-todo-list-template-11821916
-- https://bbbootstrap.com/snippets/todo-list-jquery-and-font-awesome-icons-77769811
-- https://bbbootstrap.com/snippets/awesome-todo-list-template-25095891
-- https://bootsnipp.com/snippets/QbN51
-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-- https://www.codecademy.com/learn/react-101/modules/react-102-advanced-react-u
+> Container
+
+HomePage
+
+- Props: N/A
+- State: timezoneList, selectedTimezoneList, currentTime
+- Render:
+  - Header
+  - TimezoneList: timezoneList
+  - ClockList: selectedTimezoneList, currentTime
+  - Footer
+
+> Components
+
+- Header: render header
+- Footer: render footer
+- TimezoneList
+  - Props: timezoneList
+  - State: N/A
+  - Render: a list of timezones
+- ClockList
+  - Props: clockList
+  - State: N/A
+  - Render: a list of Clock
+- Clock
+  - Props: currentTime: {hours,minutes,seconds}
+  - State: N/A
+  - Render: a Clock
+
+## References
+
+- https://www.javatpoint.com/react-hooks
