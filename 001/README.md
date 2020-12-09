@@ -34,7 +34,8 @@ HomePage
   - Render: a list of Clock
 - Clock
   - Props: currentTime: {hours,minutes,seconds}
-  - State: N/A
+  - State: currentSecond
+  - Handle to update currentSecond per second
   - Render: a Clock
 
 ## References

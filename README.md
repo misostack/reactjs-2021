@@ -1,6 +1,6 @@
 # ReactJS 2021
 
-> Learn enough to be dangerous
+> Learn enough to be dangerous :green_heart::green_heart::green_heart:
 
 **Flow**
 
@@ -23,6 +23,28 @@ surge
 
 ### Props, State and Global State :thinking:
 
+> Props
+
+- Immutable
+- Pass from parent
+- Increase the flexibility for component
+
+> State
+
+- Mutable
+- Only use by the only **ONE** component
+- Example:
+  - Data fetch from API which is used in component
+  - CurrentSecond in count down example
+
+> Global State ( Redux )
+
+- Mutable
+- Use by **MANY** component
+- Example:
+  - User's logged-in info
+  - Shopping cart's info
+
 ### Cách chia component trong ReactJS :thinking:
 
 > **Container**: Smart Component - Stateful component
@@ -44,11 +66,11 @@ surge
 - https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0
 - https://gist.github.com/misostack/ad5b3f4e6bbf903b15e0fb8c8b1e2f43
 
-### Component vs PureComponent
+### Component vs PureComponent :thinking:
 
 > PureComponent is exactly the same as Component except that it handles the shouldComponentUpdate method for you . When props or state changes, PureComponent will do a shallow comparison on both props and state. Component on the other hand won't compare current props and state to next out of the box
 
-### Lifecycle
+### Lifecycle :thinking:
 
 ![ReactJS LifeCycle](./assets/reactjs-lifecycle.png)
 
